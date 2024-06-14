@@ -2,7 +2,6 @@ from datetime import datetime
 from pydantic import BaseModel, Field
 
 class SchemaReview(BaseModel):
-    user: str
-    movie: str
-    cigars: int
-    created_at: datetime = Field(datetime.now)
+    movie_id: str
+    description: str = Field(max_length=500)
+    cigars: int = Field(gt=1, lt=6)

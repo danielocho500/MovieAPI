@@ -7,7 +7,7 @@ from db.operations.artist import exist_artist,create_artist, get_all_artist
 artist_route = APIRouter()
 
 @artist_route.post("")
-def create_artist(request: Request, artist:SchemaArtist):
+def post_artist(request: Request, artist:SchemaArtist):
     
     result, _ = has_authorization(request, 1)
 

@@ -7,7 +7,7 @@ from db.operations.genre import create_genre, exist_genre_by_id, get_all_genre
 genre_route = APIRouter()
 
 @genre_route.post("")
-def create_genre(request: Request, genre: SchemaGenre):
+def post_genre(request: Request, genre: SchemaGenre):
     
     result, _ = has_authorization(request, 1)
 

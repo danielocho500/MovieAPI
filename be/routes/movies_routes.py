@@ -2,8 +2,7 @@ from fastapi import APIRouter, Request
 from utils.has_authorization import has_authorization, response_authorization
 from models.movie import SchemaMovie
 from utils.response_message import response_message
-from db.operations.movie import exist_movie, create_movie, exist_movie_by_id, get_movie_details
-
+from db.operations.movie import exist_movie, create_movie, exist_movie_by_id, get_movie_details, get_movies_pagination
 
 movies_route = APIRouter()
 
@@ -40,3 +39,37 @@ def get_movie(request: Request, movie_id: str):
     return response_message(200, "movie found", {
         "movie": movie
     })
+
+
+@movies_route.get("/")
+def get_movies(request: Request, artist_id: str = None, movie_name: str = None, year: int = None, rating_more: float = None, rating_less: float = None, page_number: int = 1, items_per_page: int = 3 ):
+    query_movies = {}
+
+    if artist_id:
+        query_movies["artists"] = {
+            "$elemMatch": {
+                "id": artist_id,
+                "role": {"$in": [1, 2]}
+            }
+        }
+        
+    if movie_name:
+        query_movies["name"] = {"$regex": movie_name, "$options": "i"}
+
+    if year:
+        query_movies["year"] = 2019
+
+    movies, pages_total = get_movies_pagination(query_movies, page_number, items_per_page)
+
+    movies_to_return = []
+
+    for movie in movies:
+        movie_details = get_movie_details(str(movie["_id"]))
+        movies_to_return.append(movie_details)
+
+    return response_message(200, "movies found", {
+        "pages_total": pages_total,
+        "movies": movies_to_return
+    })
+
+

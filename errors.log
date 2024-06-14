@@ -31,5 +31,24 @@
 2024-06-14 17:23:45,168 - AnyIO worker thread - SpawnProcess-186 - ERROR - get_artist: 'role'
 2024-06-14 17:24:55,518 - AnyIO worker thread - SpawnProcess-188 - ERROR - get_artist: 'role'
 2024-06-14 17:26:02,642 - AnyIO worker thread - SpawnProcess-189 - ERROR - get_artist: 'role'
-2024-06-14 17:27:04,991 - AnyIO worker thread - SpawnProcess-191 - ERROR - get_artist: 'role'
-2024-06-14 17:27:58,244 - AnyIO worker thread - SpawnProcess-193 - ERROR - get movie details: 'role'
+2024-06-14 17:27:04,991 - AnyIO worker thread - SpawnProcess-191 - ERROR - get_artist: 'role'2024-06-14 20:24:41,498 - AnyIO worker thread - SpawnProcess-6 - ERROR - create movie: 'artist'
+2024-06-14 20:24:50,036 - AnyIO worker thread - SpawnProcess-6 - ERROR - create movie: 'artist'
+2024-06-14 20:26:10,934 - AnyIO worker thread - SpawnProcess-7 - ERROR - create movie: 'artist'
+2024-06-14 20:26:45,363 - AnyIO worker thread - SpawnProcess-8 - ERROR - create movie: 'artist'
+2024-06-14 20:27:21,855 - AnyIO worker thread - SpawnProcess-9 - ERROR - create movie: 'artist'
+2024-06-14 20:27:59,633 - AnyIO worker thread - SpawnProcess-10 - ERROR - create movie: 'SchemaArtistMovie' object is not subscriptable
+2024-06-14 20:28:36,436 - AnyIO worker thread - SpawnProcess-11 - ERROR - create movie: 'SchemaArtistMovie' object is not subscriptable
+2024-06-14 20:28:59,531 - AnyIO worker thread - SpawnProcess-12 - ERROR - create movie: 'SchemaArtistMovie' object is not subscriptable
+2024-06-14 20:29:12,456 - AnyIO worker thread - SpawnProcess-13 - ERROR - create movie: 'SchemaArtistMovie' object is not subscriptable
+2024-06-14 22:12:32,434 - AnyIO worker thread - SpawnProcess-59 - ERROR - username_exist: Invalid token type. Token must be a <class 'bytes'>
+2024-06-14 22:12:56,287 - AnyIO worker thread - SpawnProcess-59 - ERROR - username_exist: Not enough segments
+2024-06-14 22:13:33,936 - AnyIO worker thread - SpawnProcess-59 - ERROR - update movie cigars: cannot access local variable 'new_reviews' where it is not associated with a value
+2024-06-14 22:14:16,374 - AnyIO worker thread - SpawnProcess-59 - ERROR - update movie cigars: cannot access local variable 'new_reviews' where it is not associated with a value
+2024-06-14 22:16:14,791 - AnyIO worker thread - SpawnProcess-60 - ERROR - update movie cigars: cannot access local variable 'new_reviews' where it is not associated with a value
+2024-06-14 22:19:11,592 - AnyIO worker thread - SpawnProcess-62 - ERROR - update movie cigars: cannot access local variable 'new_reviews' where it is not associated with a value
+2024-06-14 22:20:44,456 - AnyIO worker thread - SpawnProcess-64 - ERROR - update movie cigars: cannot access local variable 'new_reviews' where it is not associated with a value
+2024-06-14 22:33:15,830 - AnyIO worker thread - SpawnProcess-66 - ERROR - update movie cigars: cannot access local variable 'new_reviews' where it is not associated with a value
+2024-06-14 22:37:43,709 - AnyIO worker thread - SpawnProcess-66 - ERROR - update movie cigars: cannot access local variable 'new_reviews' where it is not associated with a value
+2024-06-14 22:52:00,302 - AnyIO worker thread - SpawnProcess-66 - ERROR - update movie cigars: cannot access local variable 'new_reviews' where it is not associated with a value
+2024-06-14 22:58:39,779 - AnyIO worker thread - SpawnProcess-66 - ERROR - genre_exist: 'Romantic' is not a valid ObjectId, it must be a 12-byte input or a 24-character hex string
+2024-06-14 22:58:51,728 - AnyIO worker thread - SpawnProcess-66 - ERROR - genre_exist: 'Sports' is not a valid ObjectId, it must be a 12-byte input or a 24-character hex string
