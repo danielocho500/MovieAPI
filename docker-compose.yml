@@ -1,0 +1,21 @@
+version: '3.8'
+
+services:
+  api:
+    build: ./be
+    volumes:
+      - .:/code
+    ports:
+      - '8020:8000'
+    depends_on:
+      - db
+  db:
+    image: mongo
+    restart: always
+    ports:
+      - 27017:27017
+    volumes:
+      - taskdb:/data/db
+
+volumes:
+  taskdb:
